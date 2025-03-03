@@ -11,7 +11,7 @@ import Cookies from 'js-cookie';
 import axios from 'axios';
 import { NEXT_PUBLIC_API_URL } from '@/app/config/envs';
 
-const FormLogin = () => {
+export default function FormLogin() {
   const { setUserData } = useAuth();
   const [showPassword, setShowPassword] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
@@ -131,6 +131,4 @@ const FormLogin = () => {
       </div>
     </div>
   );
-};
-
-export default FormLogin;
+}
