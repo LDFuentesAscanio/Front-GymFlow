@@ -10,7 +10,6 @@ import { useAuth } from '@/context/AuthContext';
 import Cookies from 'js-cookie';
 import axios from 'axios';
 import { NEXT_PUBLIC_API_URL } from '@/app/config/envs';
-import GoogleButton from '../GoogleButton/GoogleButton';
 
 const FormLogin = () => {
   const { setUserData } = useAuth();
@@ -126,7 +125,6 @@ const FormLogin = () => {
                   Regístrate
                 </Link>
               </p>
-              <GoogleButton />
             </Form>
           )}
         </Formik>
