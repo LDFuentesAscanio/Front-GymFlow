@@ -1,4 +1,5 @@
 'use client';
+
 import { IUserSession } from '@/interfaces/IUserSession';
 import { createContext, useContext, useEffect, useState } from 'react';
 
